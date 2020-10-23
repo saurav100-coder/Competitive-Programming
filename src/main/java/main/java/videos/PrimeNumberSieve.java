@@ -14,7 +14,7 @@ public class PrimeNumberSieve {
         final double sqrtOfN = Math.sqrt(n);
         final List<Integer> primes = new ArrayList<>();
         primes.add(2);
-        for (int i = 2; i < n; i += 2) {
+        for (int i = 2; i <= n; i += 2) {
             touched[i] = true;
         }
         for (int i = 3; i <= sqrtOfN; i++) {
